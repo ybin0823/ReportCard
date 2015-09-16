@@ -54,14 +54,14 @@
 -(BOOL)willDelegate {
     NSString *event = [queue remove];
     if ([event isEqualToString:@"start"]) {
-        [appDelegate start];
+        [appDelegate started];
         return YES;
     }
     if ([event isEqualToString:@"exit"]) {
-        [appDelegate exit];
+        [appDelegate willExit];
         return NO;
     }
-    [appDelegate runEvent:event];
+    [appDelegate runCommand:event];
     return YES;
 }
 

@@ -13,9 +13,9 @@
 
 
 @required
-- (void)start;
-- (void)exit;
-- (void)runEvent:(NSString *)event;
+- (void)started;
+- (void)willExit;
+- (void)runCommand:(NSString *)event;
 
 @end
 

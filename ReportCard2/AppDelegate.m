@@ -11,13 +11,13 @@
 #import "MyApplication.h"
 
 @implementation AppDelegate
--(void)start {
+-(void)started {
     NSLog(@"start");
 }
--(void)exit {
+-(void)willExit {
     NSLog(@"exit");
 }
--(void)runEvent:(NSString *)event {
+-(void)runCommand:(NSString *)event {
     NSLog(@"%@", event);
 }
 @end
