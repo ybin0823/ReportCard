@@ -8,7 +8,7 @@
 
 #import "MyApplication.h"
 
-static MyApplication *myApplication;
+static MyApplication *myApplication = nil;
 
 @implementation MyApplication
 {
@@ -31,6 +31,45 @@ static MyApplication *myApplication;
     if (self) {
         id applicationDelegate = [[[NSClassFromString(delegateClassName) alloc] init] autorelease];
         loop = [[RunLoop alloc] initWithDelegate:applicationDelegate];
+    }
+    return self;
+}
++ (id)sharedManager {
+    @synchronized(self) {
+        if(myApplication == nil)
+            myApplication = [[super allocWithZone:NULL] init];
+    }
+    return myApplication;
+}
++ (id)allocWithZone:(NSZone *)zone {
+    return [[self sharedManager] retain];
+}
+- (id)copyWithZone:(NSZone *)zone {
+    return self;
+}
+- (instancetype) alloc {
+    if (myApplication == nil) {
+        myApplication = [MyApplication alloc];
+    }
+    return myApplication;
+}
+- (id)retain {
+    return self;
+}
+- (NSUInteger)retainCount {
+    return UINT_MAX;
+}
+- (oneway void)release {
+    // never release
+}
+- (instancetype)autorelease {
+    return self;
+}
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        
     }
     return self;
 }
