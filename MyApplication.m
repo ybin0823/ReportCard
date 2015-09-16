@@ -8,7 +8,7 @@
 
 #import "MyApplication.h"
 
-static MyApplication *myApplication = nil;
+static MyApplication *myApplication;
 
 @implementation MyApplication
 {
@@ -25,7 +25,7 @@ static MyApplication *myApplication = nil;
     }
     return myApplication;
 }
--(instancetype) initWithDelegate:(NSString *)delegateClassName  {
+-(instancetype) initWithDelegate:(NSString *)delegateClassName {
     self = [super init];
     
     if (self) {

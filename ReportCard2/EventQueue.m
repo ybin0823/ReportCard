@@ -10,33 +10,31 @@
 
 @implementation EventQueue
 {
-    NSMutableArray *queue;
+    NSMutableArray *events;
 }
-
-@synthesize queue = queue;
 
 -(instancetype) init {
     self = [super init];
     
     if(self) {
-        queue = [[NSMutableArray alloc] init];
+        events = [[NSMutableArray alloc] init];
     }
     
     return self;
 }
 -(void)dealloc {
-    [queue release];
+    [events release];
     
     [super dealloc];
 }
 
 -(void)add:(NSString *)event {
-    [queue addObject:event];
+    [events addObject:event];
 }
 -(NSString *)remove {
-    NSString *event = [[queue firstObject] retain];
+    NSString *event = [[events firstObject] retain];
     
-    [queue removeObjectAtIndex:0];
+    [events removeObjectAtIndex:0];
     
     return [event autorelease];
 }

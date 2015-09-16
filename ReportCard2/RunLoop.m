@@ -34,35 +34,34 @@
     [super dealloc];
 }
 
--(BOOL)isEmpty {
-    if ([[queue queue] count] == 0) {
-        return YES;
-    }
-    return NO;
-}
 -(void)run {
     NSLog(@"Launching app is success");
+    char input[100];
 
     while(YES) {
-        if(![self isEmpty]) {
-            if(![self willDelegate]) {
-                return;
-            };
+        NSString *event = [queue remove];
+        if (event != nil) {
+            [self willDelegate:event];
         }
+        if ([event isEqualToString:@"exit"]) {
+            return;
+        }
+        NSLog(@"input event : ");
+        scanf("%s", input);
+        [queue add:[NSString stringWithCString:input encoding:NSUTF8StringEncoding]];
     }
 }
--(BOOL)willDelegate {
-    NSString *event = [queue remove];
+
+-(void)willDelegate:(NSString *)event {
     if ([event isEqualToString:@"start"]) {
         [appDelegate started];
-        return YES;
+        return;
     }
     if ([event isEqualToString:@"exit"]) {
         [appDelegate willExit];
-        return NO;
+        return;
     }
     [appDelegate runCommand:event];
-    return YES;
 }
 
 @end

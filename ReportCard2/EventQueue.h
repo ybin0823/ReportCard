@@ -10,8 +10,6 @@
 
 @interface EventQueue : NSObject
 
-@property (nonatomic, readonly) NSMutableArray *queue;
-
 -(instancetype) init;
 -(void)add:(NSString *)event;
 -(NSString *)remove;

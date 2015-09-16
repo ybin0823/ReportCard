@@ -17,8 +17,7 @@
 
 -(instancetype)initWithDelegate:(id)applicationDelegate;
 
--(BOOL)isEmpty;
--(BOOL)willDelegate;
 -(void)run;
+-(void)willDelegate:(NSString *)event;
 
 @end
