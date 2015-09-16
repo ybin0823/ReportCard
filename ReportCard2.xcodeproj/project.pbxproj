@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7121EE1BA0259200A0A351 /* YBStudent+ScoreSortable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7121ED1BA0259200A0A351 /* YBStudent+ScoreSortable.m */; };
+		4E7122231BA1455500A0A351 /* EventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122221BA1455500A0A351 /* EventQueue.m */; };
+		4E7122261BA1460B00A0A351 /* RunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122251BA1460B00A0A351 /* RunLoop.m */; };
+		4E7122291BA1473F00A0A351 /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7122281BA1473F00A0A351 /* MyApplication.m */; };
+		4E71222C1BA1496A00A0A351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71222B1BA1496A00A0A351 /* AppDelegate.m */; };
 		4EF50A851B9EB74F00C66278 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF50A841B9EB74F00C66278 /* main.m */; };
+		4EF50A8D1B9EB79F00C66278 /* YBStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF50A8C1B9EB79F00C66278 /* YBStudent.m */; };
+		4EF50A901B9EB80400C66278 /* YBScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF50A8F1B9EB80400C66278 /* YBScore.m */; };
+		4EF50A931B9ECBC200C66278 /* YBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF50A921B9ECBC200C66278 /* YBClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E7121EB1BA0254400A0A351 /* ScoreSortable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreSortable.h; sourceTree = "<group>"; };
+		4E7121EC1BA0259200A0A351 /* YBStudent+ScoreSortable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YBStudent+ScoreSortable.h"; sourceTree = "<group>"; };
+		4E7121ED1BA0259200A0A351 /* YBStudent+ScoreSortable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YBStudent+ScoreSortable.m"; sourceTree = "<group>"; };
+		4E7122211BA1455500A0A351 /* EventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventQueue.h; sourceTree = "<group>"; };
+		4E7122221BA1455500A0A351 /* EventQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventQueue.m; sourceTree = "<group>"; };
+		4E7122241BA1460B00A0A351 /* RunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoop.h; sourceTree = "<group>"; };
+		4E7122251BA1460B00A0A351 /* RunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoop.m; sourceTree = "<group>"; };
+		4E7122271BA1473F00A0A351 /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplication.h; sourceTree = SOURCE_ROOT; };
+		4E7122281BA1473F00A0A351 /* MyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApplication.m; sourceTree = SOURCE_ROOT; };
+		4E71222A1BA1496A00A0A351 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E71222B1BA1496A00A0A351 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E71222D1BA14CF500A0A351 /* YBApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBApplicationDelegate.h; sourceTree = "<group>"; };
 		4EF50A811B9EB74F00C66278 /* ReportCard2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReportCard2; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF50A841B9EB74F00C66278 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EF50A8B1B9EB79F00C66278 /* YBStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBStudent.h; sourceTree = "<group>"; };
+		4EF50A8C1B9EB79F00C66278 /* YBStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBStudent.m; sourceTree = "<group>"; };
+		4EF50A8E1B9EB80400C66278 /* YBScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBScore.h; sourceTree = "<group>"; };
+		4EF50A8F1B9EB80400C66278 /* YBScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBScore.m; sourceTree = "<group>"; };
+		4EF50A911B9ECBC200C66278 /* YBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBClass.h; sourceTree = "<group>"; };
+		4EF50A921B9ECBC200C66278 /* YBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +64,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E71222E1BA265D500A0A351 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				4E7122211BA1455500A0A351 /* EventQueue.h */,
+				4E7122221BA1455500A0A351 /* EventQueue.m */,
+				4E7122241BA1460B00A0A351 /* RunLoop.h */,
+				4E7122251BA1460B00A0A351 /* RunLoop.m */,
+				4E7122271BA1473F00A0A351 /* MyApplication.h */,
+				4E7122281BA1473F00A0A351 /* MyApplication.m */,
+				4E71222D1BA14CF500A0A351 /* YBApplicationDelegate.h */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		4E71222F1BA265E000A0A351 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4EF50A841B9EB74F00C66278 /* main.m */,
+				4E71222A1BA1496A00A0A351 /* AppDelegate.h */,
+				4E71222B1BA1496A00A0A351 /* AppDelegate.m */,
+				4EF50A8B1B9EB79F00C66278 /* YBStudent.h */,
+				4EF50A8C1B9EB79F00C66278 /* YBStudent.m */,
+				4EF50A8E1B9EB80400C66278 /* YBScore.h */,
+				4EF50A8F1B9EB80400C66278 /* YBScore.m */,
+				4EF50A911B9ECBC200C66278 /* YBClass.h */,
+				4EF50A921B9ECBC200C66278 /* YBClass.m */,
+				4E7121EB1BA0254400A0A351 /* ScoreSortable.h */,
+				4E7121EC1BA0259200A0A351 /* YBStudent+ScoreSortable.h */,
+				4E7121ED1BA0259200A0A351 /* YBStudent+ScoreSortable.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
 		4EF50A781B9EB74F00C66278 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +116,8 @@
 		4EF50A831B9EB74F00C66278 /* ReportCard2 */ = {
 			isa = PBXGroup;
 			children = (
-				4EF50A841B9EB74F00C66278 /* main.m */,
+				4E71222E1BA265D500A0A351 /* System */,
+				4E71222F1BA265E000A0A351 /* Application */,
 			);
 			path = ReportCard2;
 			sourceTree = "<group>";
@@ -118,7 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7122261BA1460B00A0A351 /* RunLoop.m in Sources */,
 				4EF50A851B9EB74F00C66278 /* main.m in Sources */,
+				4E71222C1BA1496A00A0A351 /* AppDelegate.m in Sources */,
+				4E7121EE1BA0259200A0A351 /* YBStudent+ScoreSortable.m in Sources */,
+				4EF50A931B9ECBC200C66278 /* YBClass.m in Sources */,
+				4E7122291BA1473F00A0A351 /* MyApplication.m in Sources */,
+				4EF50A8D1B9EB79F00C66278 /* YBStudent.m in Sources */,
+				4E7122231BA1455500A0A351 /* EventQueue.m in Sources */,
+				4EF50A901B9EB80400C66278 /* YBScore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +273,7 @@
 		4EF50A891B9EB74F00C66278 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +281,7 @@
 		4EF50A8A1B9EB74F00C66278 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +305,7 @@
 				4EF50A8A1B9EB74F00C66278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
