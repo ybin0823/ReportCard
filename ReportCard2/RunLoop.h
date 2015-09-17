@@ -18,6 +18,6 @@
 -(instancetype)initWithDelegate:(id)applicationDelegate;
 
 -(void)run;
--(void)willDelegate:(NSString *)event;
+-(void)delegate:(NSString *)event;
 
 @end

@@ -41,7 +41,7 @@
     while(YES) {
         NSString *event = [queue remove];
         if (event != nil) {
-            [self willDelegate:event];
+            [self delegate:event];
         }
         if ([event isEqualToString:@"exit"]) {
             return;
@@ -52,7 +52,7 @@
     }
 }
 
--(void)willDelegate:(NSString *)event {
+-(void)delegate:(NSString *)event {
     if ([event isEqualToString:@"start"]) {
         [appDelegate started];
         return;
